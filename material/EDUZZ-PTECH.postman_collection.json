@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "184daf47-a94f-4500-b99b-c420f5e612bd",
+		"name": "EDUZZ-PTECH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4037095"
+	},
+	"item": [
+		{
+			"name": "Primeira Rota",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rota de POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"teste\": \"teste\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": [
+				{
+					"name": "Rota de POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"teste\": \"teste\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000",
+							"host": [
+								"localhost"
+							],
+							"port": "8000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-z+uRUkYoYSgSuLUPhgFy136BWNg\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Oct 2022 00:51:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensagem\": \"Rota de post\",\n    \"data\": {\n        \"teste\": \"teste\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ALL - LISTA TODOS POKEMONS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/pokemons",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pokemons"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL - LISTA TODOS POKEMONS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/pokemons",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pokemons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2839"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b17-uKAU+iH5FHTBShgLJ9KQuGXqXmE\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Oct 2022 01:04:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Mr. Mime\",\n        \"avatar\": \"mr-mime\",\n        \"color\": \"#e89aaf\",\n        \"uri\": \"mr-mime\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Azumarill\",\n        \"avatar\": \"azumarill\",\n        \"color\": \"#26c2e0\",\n        \"uri\": \"azumarill\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Pikachu\",\n        \"avatar\": \"pikachu\",\n        \"color\": \"#ddc81a\",\n        \"uri\": \"pikachu\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Duraludon\",\n        \"avatar\": \"duraludon\",\n        \"color\": \"#535165\",\n        \"uri\": \"duraludon\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Aegislash\",\n        \"avatar\": \"aegislash\",\n        \"color\": \"#e4d974\",\n        \"uri\": \"aegislash\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Trevenant\",\n        \"avatar\": \"trevenant\",\n        \"color\": \"#8b634f\",\n        \"uri\": \"trevenant\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Tsareena\",\n        \"avatar\": \"tsareena\",\n        \"color\": \"#e984a8\",\n        \"uri\": \"tsareena\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Decidueye\",\n        \"avatar\": \"decidueye\",\n        \"color\": \"#e2ded9\",\n        \"uri\": \"decidueye\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Greedent\",\n        \"avatar\": \"greedent\",\n        \"color\": \"#ad5232\",\n        \"uri\": \"greedent\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Blissey\",\n        \"avatar\": \"blissey\",\n        \"color\": \"#bc6382\",\n        \"uri\": \"blissey\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Dragonite\",\n        \"avatar\": \"dragonite\",\n        \"color\": \"#FFA800\",\n        \"uri\": \"dragonite\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Mamoswine\",\n        \"avatar\": \"mamoswine\",\n        \"color\": \"#a96832\",\n        \"uri\": \"mamoswine\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Blastoise\",\n        \"avatar\": \"blastoise\",\n        \"color\": \"#7ebcd8\",\n        \"uri\": \"blastoise\"\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Gardevoir\",\n        \"avatar\": \"gardevoir\",\n        \"color\": \"#e3e4e1\",\n        \"uri\": \"gardevoir\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Sylveon\",\n        \"avatar\": \"sylveon\",\n        \"color\": \"#d67295\",\n        \"uri\": \"sylveon\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Zeraora\",\n        \"avatar\": \"zeraora\",\n        \"color\": \"#d4b913\",\n        \"uri\": \"zeraora\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Venusaur\",\n        \"avatar\": \"venusaur\",\n        \"color\": \"#5ae2e5\",\n        \"uri\": \"venusaur\"\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Charizard\",\n        \"avatar\": \"charizard\",\n        \"color\": \"#FFA800\",\n        \"uri\": \"charizard\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Snorlax\",\n        \"avatar\": \"snorlax\",\n        \"color\": \"#2589aa\",\n        \"uri\": \"snorlax\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Crustle\",\n        \"avatar\": \"crustle\",\n        \"color\": \"#b9552f\",\n        \"uri\": \"crustle\"\n    },\n    {\n        \"id\": 21,\n        \"name\": \"Greninja\",\n        \"avatar\": \"greninja\",\n        \"color\": \"#1b79d4\",\n        \"uri\": \"greninja\"\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Slowbro\",\n        \"avatar\": \"slowbro\",\n        \"color\": \"#d8a5b1\",\n        \"uri\": \"slowbro\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Eldegoss\",\n        \"avatar\": \"eldegoss\",\n        \"color\": \"#d3c811\",\n        \"uri\": \"eldegoss\"\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Talonflame\",\n        \"avatar\": \"talonflame\",\n        \"color\": \"#98a1a8\",\n        \"uri\": \"talonflame\"\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Lucario\",\n        \"avatar\": \"lucario\",\n        \"color\": \"#05b9dd\",\n        \"uri\": \"lucario\"\n    },\n    {\n        \"id\": 26,\n        \"name\": \"Absol\",\n        \"avatar\": \"absol\",\n        \"color\": \"#cdd2d7\",\n        \"uri\": \"absol\"\n    },\n    {\n        \"id\": 27,\n        \"name\": \"Machamp\",\n        \"avatar\": \"machamp\",\n        \"color\": \"#87abc3\",\n        \"uri\": \"machamp\"\n    },\n    {\n        \"id\": 28,\n        \"name\": \"Wigglytuff\",\n        \"avatar\": \"wigglytuff\",\n        \"color\": \"#deb0bf\",\n        \"uri\": \"wigglytuff\"\n    },\n    {\n        \"id\": 29,\n        \"name\": \"Ninetales De Alola\",\n        \"avatar\": \"ninetales-de-alola\",\n        \"color\": \"#a7d5e6\",\n        \"uri\": \"ninetales-de-alola\"\n    },\n    {\n        \"id\": 30,\n        \"name\": \"Cramorant\",\n        \"avatar\": \"cramorant\",\n        \"color\": \"#2e91fb\",\n        \"uri\": \"cramorant\"\n    },\n    {\n        \"id\": 31,\n        \"name\": \"Gengar\",\n        \"avatar\": \"gengar\",\n        \"color\": \"#9478c4\",\n        \"uri\": \"gengar\"\n    },\n    {\n        \"id\": 32,\n        \"name\": \"Garchomp\",\n        \"avatar\": \"garchomp\",\n        \"color\": \"#5e5d95\",\n        \"uri\": \"garchomp\"\n    },\n    {\n        \"id\": 33,\n        \"name\": \"Cinderace\",\n        \"avatar\": \"cinderace\",\n        \"color\": \"#bf3b1a\",\n        \"uri\": \"cinderace\"\n    },\n    {\n        \"id\": 34,\n        \"name\": \"Hoopa\",\n        \"avatar\": \"hoopa\",\n        \"color\": \"#c36d92\",\n        \"uri\": \"hoopa\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET ONE - LISTA UM POKEMON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/pokemons/slowbro",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pokemons",
+						"slowbro"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ONE - LISTA UM POKEMON",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/pokemons/slowbro",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pokemons",
+								"slowbro"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "569"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"239-kAGiCa8lk7LYSW+Z/LfGK62Ohgk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Oct 2022 01:06:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 22,\n    \"name\": \"Slowbro\",\n    \"avatar\": \"slowbro\",\n    \"description\": \"Não importa a situação, Slowbro sempre leva a vida no seu próprio ritmo. Com sua alta defesa e falta de noção habitual, Slowbro não dá a mínima para os ataques dos oponentes.\",\n    \"level\": 2,\n    \"stats_battle\": [\n        \"Defender\",\n        \"Ranged\"\n    ],\n    \"color\": \"#d8a5b1\",\n    \"uri\": \"slowbro\",\n    \"skills\": {\n        \"attack\": 30,\n        \"resistance\": 80,\n        \"mobility\": 3,\n        \"punctuation\": 30,\n        \"support\": 80\n    },\n    \"evolutions\": [\n        {\n            \"id\": 40,\n            \"name\": \"SLOWPOKE\",\n            \"avatar\": \"evolution-1-slowpoke.png\",\n            \"level\": 1\n        },\n        {\n            \"id\": 41,\n            \"name\": \"SLOWBRO\",\n            \"avatar\": \"evolution-2-slowbro.png\",\n            \"level\": 4\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "SAVE ONE - SIMULA SALVAMENTO DO POKEMON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Charmander\",\n    \"tipo\": \"Fogo\",\n    \"poder\": \"Lança chamas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/pokemons",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"pokemons"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SAVE ONE - SIMULA SALVAMENTO DO POKEMON",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Charmander\",\n    \"tipo\": \"Fogo\",\n    \"poder\": \"Lança chamas\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/pokemons",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"pokemons"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-ccf0aSMUQaXqx3vE4sC7dBpgL28\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 25 Oct 2022 01:10:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nome\": \"Charmander\",\n    \"tipo\": \"Fogo\",\n    \"poder\": \"Lança chamas\"\n}"
+				}
+			]
+		}
+	]
+}
