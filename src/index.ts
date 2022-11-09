@@ -7,3 +7,5 @@ app.listen(8000, () => {
 });
 
 app.get('/', pokemonController.main);
+
+app.get('/:pokemonName', pokemonController.details);

@@ -9,6 +9,14 @@ class PokemonController {
             message: listPokemons
         });
     }
+
+    public async details(req: Request, res: Response) {
+        const pokemonDetails = await pokemonService.details(req.params.pokemonName);
+
+        return res.json({
+            message: pokemonDetails
+        });
+    }
 }
 
 export default new PokemonController();

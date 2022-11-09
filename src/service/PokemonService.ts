@@ -6,6 +6,12 @@ class PokemonService {
 
         return retornoDaRepository;
     }
+
+    public async details(pokemonName: string) {
+        const retornoDaRepository = await PokemonRepository.details(pokemonName);
+
+        return retornoDaRepository;
+    }
 }
 
 export default new PokemonService();

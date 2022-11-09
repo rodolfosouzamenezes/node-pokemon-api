@@ -8,6 +8,14 @@ class PokemonRepository {
 
         return objPokemons;
     }
+
+    public async details(pokemonName: string) {
+        const pokemonDetails = fs.readFileSync(`./DB/${pokemonName}.json`, 'utf-8');
+
+        const objPokemonDetails = JSON.parse(pokemonDetails);
+
+        return objPokemonDetails;
+    }
 }
 
 export default new PokemonRepository();
